@@ -1,0 +1,110 @@
+@use './core/mixins' as *;
+@use './core/functions' as *;
+
+.footer {
+    margin-top: 36px;
+    
+    &__inner {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      max-width: 1440px;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 24px;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin: 0 auto;
+      flex-direction: column;
+      
+      @include media(md) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      
+      @include media(lg) {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+  
+      @include media(xl) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  
+    &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      
+      @include media(md) {
+        width: 50%;
+      }
+    }
+  
+    &__right {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__logo {
+      position: relative;
+      text-decoration: none;
+      color: #000000;
+      margin-bottom: 16px;
+      
+      &-text {
+        font-size: 24px;
+        line-height: 20px;
+      }
+      
+      &-caption {
+        font-size: 12px;
+        line-height: 10px;
+        font-weight: 200;
+      }
+    }
+  
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 8px;
+      
+      & li {
+        list-style: none;
+      }
+    }
+  
+    &__menu-item {
+      font-size: 16px;
+      list-style: none;
+    }
+    
+    &__link {
+      color: #637096; 
+      border-bottom: 1px solid #c9d1e6;
+      text-decoration: none;
+    }
+    
+    &__license {
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      color: #8394c3;
+      
+      @include media(md) {
+        text-align: right;
+      }
+    }
+  
+    &__address {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+    }
+  }

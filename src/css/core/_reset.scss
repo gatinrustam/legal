@@ -1,0 +1,27 @@
+* { 
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Geologica", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 200;
+	font-size: var(--default-font-size);
+	color: var(--main-text-color);
+	background-color: var(--main-bg-color);
+}
+
+a {
+  color: var(--main-link-color);
+}
+
+// .main {
+// 	overflow: hidden;
+// }
