@@ -1,4 +1,8 @@
 @use 'core';
 
 @forward 'header';
+@forward 'container';
+@forward 'buttons';
+@forward 'intro';
+@forward 'choose';
 @forward 'footer';

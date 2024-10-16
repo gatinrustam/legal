@@ -1,36 +1,21 @@
 :root {
+  --default-font-size: 16px;
+
   /* фоновые цвета */
-  --main-bg-color: #f5f8fe;
+  --main-bg-color: #FCF7F3;
+  --sand-bg-color: #F1E2D7;
+  --gold-bg-color: #B8967E;
   --blue-bg-color: #f0f4fb;
   --white-bg-color: #ffffff;
 
   /* цвета текста */
-  --main-text-color: #264364;
+  --main-black-color: #252525;
+  --main-blue-color: #37425F;
+  --main-gold-color: #B8967E;
+  --main-white-color: #FCF7F3;
+  --main-sand-color: #F1E2D7;
   --light-text-color: #8393c3;
 
-  
-  /* цвета ссылок */
-  --main-link-color: #2196f3;
-  --main-menu-color: #ffffff;
-
-  /* зеленая кнопка  */
-  --green-button-bg: #35ad6c;
-
-
-  --black-bg-button: #57656f;
-
-  --default-top-margin: 96px;
-  --default-top-mobile-margin: 48px;
-
-  /* шрифты */
-  --default-font-size: 18px;
-
-  /* borders */
-  --main-border-line: 1px solid #e5eafb;
-
-  /* тени */
-  --white-box-shadow: 
-    -6px -6px 20px rgba(209,220,250,.12),
-    24px 24px 30px rgba(209,220,250,.16),
-    8px 8px 8px rgba(163,184,245,.06);
+  /* padding */
+  --content-width: 1088px;
 }

@@ -1,0 +1,92 @@
+@use './core/mixins' as *;
+@use './core/functions' as *;
+
+.container {
+    width: 100%;
+
+    &--top { 
+        margin-top: 60px;
+        
+        @include media(md) {
+          margin-top: 80px;
+        }
+    }
+
+    &__inner {
+      width: 100%;
+      max-width: var(--content-width);
+      padding-left: 16px;
+      padding-right: 16px;
+      margin: 0 auto;
+  
+      @include media(md) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+  
+      @include media(xl) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+  
+    &__title {
+      margin-bottom: 0;
+    }
+  
+    &__subtitle:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    &__sup {
+      font-size: 14px;
+      color: rgb(0 0 0 / 50%);
+    }
+  
+    &__description {
+      width: 100%;
+      margin: 0 0 48px;
+      
+      @include media(md) {
+        width: 70%;
+      }
+    }
+
+    &__controls {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      width: fit-content;
+      margin-bottom: 0;
+
+      &--right {
+        margin-left: auto;
+      }
+    }
+
+    &__heading {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    &__content {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &__disclaimer {
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+        color: #8394c3;
+
+        & a {
+          color: #637096; 
+          border-bottom: 1px solid #c9d1e6;
+          text-decoration: none;
+        }
+    }
+  }
+  
